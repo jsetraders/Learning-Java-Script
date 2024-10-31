@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Show JS Outputs</title>
+</head>
+	
+	<!--
+		Output JS data and dispaly:
+		- Writing into an HTML element using "innerHTML".
+		- Writing into the HTML output using "document.write()".
+		- Writing into an alert box, using "window.alert()".
+		- Writing into the browser consol, using "console.log()".
+
+	-->
+<body>
+		<!-- 
+		To access an HTML element JS can use "document.getElementById(id)" method. The "id" attribute of the element identify the particular element. The innerHTML property defines the HTML content to put out.
+		-->
+
+			<h1>Java Script outputs</h1>
+				<h3> #1 Using innerHTML</h3>
+						<em>The p HTML element is identified as the interested party to the js script and the content of its ID attribute is output to the screen</em>
+
+						<!-- the content of "demo_1" is generated in the js scription section just above the closng body tag -->
+						<p id="demo_1"></p>
+			<br>
+
+
+				<h3> #2 Using document.write()</h3>
+						<em>With "document.write()" there is a direct output to the screen without the need for a container.</em>
+
+						<p>
+						<script> document.write (5+9); </script> 
+						<!-- a direct output without the need for container and all actions happens within the current inline js script tag-->
+						</p>
+
+			<br>
+						<!-- All actions happens within the current inline js onclick instruction -->
+						<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+						<p>Using "document.write(5+6)"" and clicking the button will erase all HTML from the page. It will only display the result of the caulculation in the parenthese.</p>
+						<p>The document.write() method should only be used for testing.</p>
+
+			<br>
+
+				<h3> #3 Using window.alert()</h3>
+						<em>With "window.alert(20+9)" there is again a direct output to the screen without the need for a container.</em>
+						<script> document.write (20+9); </script> <!-- a direct output without the need for container and all actions happens within the current inline js script tag-->
+						<p>You can skip the window keyword.</p>
+
+						<p>n JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:</p>
+
+			<br>
+
+				<h3> #4 Using console.log()</h3>
+						<em>For debugging purposes, you can call the "console.log()" method in the browser to display data.</em>
+						<script> console.log(20+9);</script> <!-- a direct output to the browser's console, all actions happens within the current inline js script tag -->
+
+
+			<br>
+
+				<h3> #5 JavaScript print</h3>
+						
+						<p>JavaScript does not have any print object or print methods. You cannot access output devices from JavaScript.</p>
+
+						<p>The only exception is that you can call the "window.print()" method in the browser to print the content of the current window to the computers printer.</p>
+
+						<button type="button" onclick="window.print()">Try it</button> <!-- a direct output to the printer, all actions happens when clicking the current inline js  button -->
+
+
+
+			<script>
+				// For the 5 examples above this part alone, in-between the script tags here, refere to #1 where the script generate the output to display in demo_1 , all other instances works with their inline statements.
+				document.getElementById("demo_1"). innerHTML = 5 + 6; // places 11 as the contents of container demo_1
+
+			</script> 
+
+
+</body>
+</html>

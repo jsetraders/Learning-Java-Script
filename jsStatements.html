@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Statements</title>
+</head>
+<body>
+
+	<h2>JavaScript Statements</h2>
+
+		<h3>The JavaScript Program</h3>
+			<p>The <b>JavaScript program</b> is a list of "instructions" to be executed by a computer. These programming instructions are called <b>statements</b>. These statements are normally between js scrpit tags or using certain methods</p>
+
+			<p>In HTML, JavaScript programs are executed by the web browser.</p>
+
+			<p>JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments. The follwoing statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+
+			<p>First we need to locate a container. Lets use the HTML p tag and it's id attribute as follows:<br>
+			"p id="dolly"/p" </p>
+
+			<p>Then between js script tages place the following: <br>"document.getElementById("demo").innerHTML = "Hello Dolly."; </p>
+
+			<h4>The output will be:</h4>
+			 <p id="dolly"></p> <!-- the container-->
+				<script>//js exection part
+			document.getElementById("dolly").innerHTML = "Hello Dolly."; </script> 
+
+			<p>JavaScript statements or code, are executed one by ons in the order they are written. Semicolons(;) are used to separate JS statements.</p>
+
+			<br>
+
+		<h3>JavaScript Keywords</h3>
+			<p>JavaScript statements often start with a <b>keyword</b> to identify the JavaScript action to be performed.<br>
+			Our <u>Reserved Words Reference</u> lists all JavaScript keywords.<br>
+			Here is a list of some of the keywords you will learn about in this tutorial:<br>
+			JavaScript statements often start with a keyword to identify the JavaScript action to be performed.<br>
+			<b>var:</b> Declares a variable<br>
+			<b>let:</b> Declares a block variable<br>
+			<b>const:</b> Declares a block constant<br>
+			<b>if:</b>	Marks a block of statements to be executed on a condition<br>
+			<b>switch:</b>	Marks a block of statements to be executed in different cases<br>
+			<b>for:</b> Marks a block of statements to be executed in a loop<br>
+			<b>function:</b> Declares a function<br>
+			<b>return:</b>	Exits a function<br>
+			<b>try:</b>	Implements error handling to a block of statements<br>
+			</p>
+
+			<p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.</p>
+
+		
+
+		<!-- use of the HTML attribute -->
+		<p id="demo"></p>
+
+		<script>
+		// declare variables x,y,z and add values
+		let x, y, z;  // Statement 1
+		x = 5;        // Statement 2
+		y = 6;        // Statement 3
+		z = x + y;    // Statement 4
+
+		document.getElementById("demo").innerHTML =
+		"The value of z is " + z + ".";  
+		</script>
+
+</body>
+</html>
